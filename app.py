@@ -85,3 +85,8 @@ def predict():
 @app.route("/")
 def home():
     return "Hello, welcome on the sentiment classification API !"
+
+if __name__ == "__main__":
+
+    # Launch the Flask app
+    app.run(debug=True)
