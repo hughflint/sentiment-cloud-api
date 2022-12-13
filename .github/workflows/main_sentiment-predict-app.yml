@@ -32,12 +32,6 @@ jobs:
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
-      - name: Install pytest
-        run: pip install pytest
-        
-      - name: Run tests
-        run: pytest
-      
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v2
         with:
@@ -66,4 +60,4 @@ jobs:
         with:
           app-name: 'sentiment-predict-app'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_364E4BFB502E44C5A06D27C7FCD2DD98 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BAD33637486547C0905E39CB95DEB71E }}
