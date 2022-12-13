@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'sentiment-cls'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3B9BC82993044F34B0EE9E2DED96684E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8EF58AD7853B41558065B3407F5B0A98 }}
