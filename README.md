@@ -1,2 +1,2 @@
 # sentiment-cloud-api
-Deploy on Azure
+Deploy Azure
