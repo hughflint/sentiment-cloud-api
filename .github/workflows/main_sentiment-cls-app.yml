@@ -31,12 +31,7 @@ jobs:
         run: pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
-      - name: Install pytest
-        run: pytest
-        
-      - name: Run tests
-        run: pip install -r requirements.txt
-        
+      
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v2
         with:
@@ -65,4 +60,4 @@ jobs:
         with:
           app-name: 'sentiment-cls-app'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6C34E41B8C2847B68CAFCF10BD039606 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9BDE2C142BB44EDB8073CDDC7CB33462 }}
